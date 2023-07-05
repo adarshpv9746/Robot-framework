@@ -1,0 +1,19 @@
+1681192016423	geckodriver	INFO	Listening on 127.0.0.1:58151
+1681192016426	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "36595" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJYniDi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: VA-API test failed: missing or old libva-drm library.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1681192017047	Marionette	INFO	Marionette enabled
+1681192017051	Marionette	INFO	Listening on port 42859
+WebDriver BiDi listening on ws://127.0.0.1:36595
+Read port: 42859
+1681192017229	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJYniDi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:36595/devtools/browser/74ce8456-cde3-45f7-9d9b-c064b9e04acc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+1681192022894	Marionette	INFO	Stopped listening on port 42859

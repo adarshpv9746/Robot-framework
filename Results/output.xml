@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.10 on linux)" generated="20230427 16:57:02.409" rpa="false" schemaversion="3">
+<suite id="s1" name="TestCase1 Web" source="/home/anjanaajayakumar/PycharmProjects/POC/robotframework_template/Tests/TestCase1_Web.robot">
+<test id="s1-t1" name="Verify able to submit the form after entering all the details" line="23">
+<kw name="Begin Web Test" library="ConfigWeb" type="SETUP">
+<arg>${BROWSER_NAME}</arg>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER_NAME}</arg>
+<arg>executable_path=Resources/Web/Driver/${BROWSER_NAME}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230427 16:57:02.481" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230427 16:57:02.481" endtime="20230427 16:57:03.226"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230427 16:57:03.227" level="INFO">Opening url 'https://rahulshettyacademy.com/angularpractice/'</msg>
+<status status="PASS" starttime="20230427 16:57:03.227" endtime="20230427 16:57:03.671"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230427 16:57:03.671" endtime="20230427 16:57:03.778"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:02.481" endtime="20230427 16:57:03.779"/>
+</kw>
+<kw name="Verify the Homepage title is correct" library="Web-res">
+<arg>${TITLE}</arg>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230427 16:57:03.794" level="INFO">Page title is 'ProtoCommerce'.</msg>
+<status status="PASS" starttime="20230427 16:57:03.780" endtime="20230427 16:57:03.794"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:03.779" endtime="20230427 16:57:03.794"/>
+</kw>
+<kw name="Enter Name in the &quot;Name&quot; field" library="Web-res">
+<arg>${NAME}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${NAME_FIELD}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:03.796" level="INFO">Typing text 'Abraham' into text field 'name:name'.</msg>
+<status status="PASS" starttime="20230427 16:57:03.795" endtime="20230427 16:57:03.875"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:03.795" endtime="20230427 16:57:03.875"/>
+</kw>
+<kw name="Enter Email in the &quot;Email&quot; field" library="Web-res">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:03.876" level="INFO">Typing text 'abraham@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20230427 16:57:03.875" endtime="20230427 16:57:03.955"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:03.875" endtime="20230427 16:57:03.955"/>
+</kw>
+<kw name="Enter Password" library="Web-res">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:03.956" level="INFO">Typing password into text field 'id:exampleInputPassword1'.</msg>
+<msg timestamp="20230427 16:57:03.984" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230427 16:57:04.014" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230427 16:57:03.956" endtime="20230427 16:57:04.014"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:03.955" endtime="20230427 16:57:04.014"/>
+</kw>
+<kw name="Enable the check box &quot;Check me out if you Love IceCreams!&quot;" library="Web-res">
+<arg>${ICE_CHECKBOX}</arg>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${ICE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:04.015" level="INFO">Selecting checkbox 'id:exampleCheck1'.</msg>
+<status status="PASS" starttime="20230427 16:57:04.014" endtime="20230427 16:57:04.062"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:04.014" endtime="20230427 16:57:04.062"/>
+</kw>
+<kw name="Select Gender as Female" library="Web-res">
+<arg>${GENDER_DROPDOWN}</arg>
+<arg>${GENDER}</arg>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${GENDER_DROPDOWN}</arg>
+<arg>${GENDER}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230427 16:57:04.064" level="INFO">Selecting options from selection list 'id:exampleFormControlSelect1' by label Female.</msg>
+<status status="PASS" starttime="20230427 16:57:04.064" endtime="20230427 16:57:04.111"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:04.063" endtime="20230427 16:57:04.111"/>
+</kw>
+<kw name="Select the Employment Status as &quot;Employed&quot;" library="Web-res">
+<arg>${EMPLOYMENT_STATUS}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${EMPLOYMENT_STATUS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:04.112" level="INFO">Clicking element 'id:inlineRadio2'.</msg>
+<status status="PASS" starttime="20230427 16:57:04.112" endtime="20230427 16:57:04.145"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:04.111" endtime="20230427 16:57:04.145"/>
+</kw>
+<kw name="Enter DOB" library="Web-res">
+<arg>${DOB}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${DOB_FIELD}</arg>
+<arg>${DOB}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:04.146" level="INFO">Typing text '12/04/1990' into text field 'name:bday'.</msg>
+<status status="PASS" starttime="20230427 16:57:04.146" endtime="20230427 16:57:04.201"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:04.146" endtime="20230427 16:57:04.201"/>
+</kw>
+<kw name="Click Submit button" library="Web-res">
+<arg>${SUBMIT_BUTTON}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:04.203" level="INFO">Clicking element 'class:btn-success'.</msg>
+<status status="PASS" starttime="20230427 16:57:04.202" endtime="20230427 16:57:04.254"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:04.202" endtime="20230427 16:57:04.254"/>
+</kw>
+<kw name="Verify the Success message" library="Web-res">
+<arg>${SUCCESS_MSG}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Alert_msg}</var>
+<arg>${ALERT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230427 16:57:04.273" level="INFO">${Alert_msg} = ×
+Success! The Form has been submitted successfully!.</msg>
+<status status="PASS" starttime="20230427 16:57:04.255" endtime="20230427 16:57:04.273"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Alert_msg}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230427 16:57:04.273" level="INFO">×
+Success! The Form has been submitted successfully!.</msg>
+<status status="PASS" starttime="20230427 16:57:04.273" endtime="20230427 16:57:04.273"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${ALERT}</arg>
+<arg>${SUCCESS_MSG}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230427 16:57:04.286" level="INFO">Element 'class:alert' contains text 'Success! The Form has been submitted successfully!.'.</msg>
+<status status="PASS" starttime="20230427 16:57:04.273" endtime="20230427 16:57:04.286"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230427 16:57:06.287" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230427 16:57:04.286" endtime="20230427 16:57:06.287"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:04.254" endtime="20230427 16:57:06.287"/>
+</kw>
+<kw name="End Web Test" library="ConfigWeb" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230427 16:57:06.288" endtime="20230427 16:57:06.350"/>
+</kw>
+<status status="PASS" starttime="20230427 16:57:06.287" endtime="20230427 16:57:06.351"/>
+</kw>
+<doc>Test case to open the webpage url https://rahulshettyacademy.com/angularpractice/ and enter the details in the fields and able to Submit the details</doc>
+<tag>Web</tag>
+<status status="PASS" starttime="20230427 16:57:02.480" endtime="20230427 16:57:06.351"/>
+</test>
+<status status="PASS" starttime="20230427 16:57:02.409" endtime="20230427 16:57:06.351"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Web</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCase1 Web">TestCase1 Web</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
